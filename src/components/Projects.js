@@ -17,15 +17,23 @@ const Projects = () => {
       e.target.classList.add('hide');
     }
   };
-  const currentScreen = () => {
-    window.addEventListener('resize', () => {
-      if (screenSize === window.screen.width) return;
-      else {
-        setScreenSize(window.screen.width);
-      }
-    });
-  };
+  // const currentScreen = () => {
+  //   window.addEventListener('resize', () => {
+  //     if (screenSize === window.screen.width) return;
+  //     else {
+  //       setScreenSize(window.screen.width);
+  //     }
+  //   });
+  // };
   useEffect(() => {
+    const currentScreen = () => {
+      window.addEventListener('resize', () => {
+        if (screenSize === window.screen.width) return;
+        else {
+          setScreenSize(window.screen.width);
+        }
+      });
+    };
     currentScreen();
   }, [screenSize]);
   return (

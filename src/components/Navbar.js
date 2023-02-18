@@ -9,7 +9,13 @@ const Navbar = () => {
         {social.map((i) => {
           const { icon, id, url } = i;
           return (
-            <a className='icon' target='_blank' key={id} href={url}>
+            <a
+              className='icon'
+              target='_blank'
+              rel='noreferrer'
+              key={id}
+              href={url}
+            >
               {icon}
             </a>
           );
