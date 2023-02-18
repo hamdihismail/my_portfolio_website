@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+/* FOR SOME REASON BROWSER WASNT DISPLAYING FONT AS I'D LIKE IT TO */
+/* @font-face {
+  font-family: 'Space Grotesk';
+  src: local('SpaceGrotesk-VariableFont_wght')
+    url(./fonts/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+} */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+* {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon {
+  fill: #fff;
+}
+.icon:hover {
+  fill: hsla(154, 71%, 59%, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.circle {
+  background: url('./assets/images/pattern-circle.svg') no-repeat center
+    center/cover;
+  z-index: 10;
+}
+
+.rings {
+  background: url('./assets/images/pattern-rings.svg') no-repeat center
+    center/cover;
+}
+.rings-2 {
+  background: url('./assets/images/pattern-rings.svg') no-repeat center
+    center/cover;
+}
+.rings-3 {
+  background: url('./assets/images/pattern-rings.svg') no-repeat center
+    center/cover;
+}
+
+.profile-img {
+  background: url('./assets/images/profile_img_desktop.png') no-repeat center
+    center/cover;
+}
+@media (max-width: 800px) {
+  .profile-img {
+    background: url('./assets/images/profile_img_tablet.png') no-repeat center
+      center/cover;
+  }
+}
+@media (max-width: 650px) {
+  .profile-img {
+    background: url('./assets/images/profile_img_mobile.png') no-repeat center
+      center/cover;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon-container {
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+.contact {
+  text-decoration: none;
+  width: max-content;
+  height: 38px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.28571px;
+  color: #ffffff;
+  border-bottom: 2px solid hsla(154, 71%, 59%, 1);
+}
+.contact:hover {
+  color: hsla(154, 71%, 59%, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.form:focus {
+  outline: none;
+  border-bottom: 1px solid hsla(154, 71%, 59%, 1);
+}
+
+.msg {
+  width: inherit;
+  height: 107px;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 0.75;
+}
+.logo {
+  background: url('./assets/images/HI_resized.png') no-repeat center
+    center/cover;
+  height: 150px;
+  width: 200px;
+  align-self: flex-start;
+  /* z-index: 10; */
 }
