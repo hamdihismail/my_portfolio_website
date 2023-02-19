@@ -5,7 +5,7 @@ const Navbar = () => {
     <NavContainer>
       <h3 className='nav-header'>hamdiIsmail</h3>
       <div className='logo'></div>
-      <div className='icon-container'>
+      <div className='icon-container icon-top'>
         {social.map((i) => {
           const { icon, id, url } = i;
           return (
@@ -49,6 +49,7 @@ const NavContainer = styled.nav`
     color: #ffffff;
     @media (max-width: 650px) {
       display: block;
+      align-self: center;
     }
   }
   .logo {
@@ -65,6 +66,11 @@ const NavContainer = styled.nav`
     .icon {
       width: 24px;
       height: 24px;
+    }
+  }
+  .icon-top {
+    @media (max-width: 650px) {
+      padding-left: 20px;
     }
   }
 `;
