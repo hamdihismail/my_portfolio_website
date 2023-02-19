@@ -223,7 +223,7 @@ const Wrapper = styled.section`
       gap: 20px;
       align-items: center;
     }
-    .icon-top {
+    .icon-container {
       @media (max-width: 650px) {
         padding-left: 0;
       }
