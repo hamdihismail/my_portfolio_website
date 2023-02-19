@@ -49,7 +49,6 @@ const NavContainer = styled.nav`
     color: #ffffff;
     @media (max-width: 650px) {
       display: block;
-      align-self: center;
     }
   }
   .logo {
