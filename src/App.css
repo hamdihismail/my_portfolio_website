@@ -151,9 +151,16 @@ h6 {
 .form:focus {
   outline: none;
   border-bottom: 1px solid hsla(154, 71%, 59%, 1);
-  background-color: transparent;
 }
 
+/* this changes the input text field attributes when clicking on browser suggested name or email */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #242424 inset;
+  -webkit-text-fill-color: #fff;
+}
 .msg {
   width: inherit;
   height: 107px;
