@@ -151,6 +151,7 @@ h6 {
 .form:focus {
   outline: none;
   border-bottom: 1px solid hsla(154, 71%, 59%, 1);
+  background-color: transparent;
 }
 
 .msg {

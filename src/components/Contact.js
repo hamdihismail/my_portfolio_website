@@ -17,10 +17,10 @@ const Contact = () => {
   //   setMessage(e.target.value);
   // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('submitted');
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('submitted');
+  // };
   return (
     <Wrapper id='contact'>
       <div className='contact-container'>
@@ -31,7 +31,7 @@ const Contact = () => {
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </div>
-        <form onSubmit={handleSubmit} name='contact' netlify>
+        <form name='contact' netlify>
           <input
             className='form'
             type='text'
