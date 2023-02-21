@@ -31,7 +31,7 @@ const Contact = () => {
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} name='contact' netlify>
           <input
             className='form'
             type='text'
