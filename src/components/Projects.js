@@ -6,13 +6,14 @@ const Projects = () => {
   const [screenSize, setScreenSize] = useState(window.screen.width);
 
   const showOverlay = (e) => {
-    if (e.target.className !== 'VIEW-PROJECT') {
+    console.log(e.target);
+    if (e.target.className === 'overlay hide') {
       e.target.classList.remove('hide');
       e.target.classList.add('show');
     }
   };
   const hideOverlay = (e) => {
-    if (e.target.className.contains !== 'VIEW') {
+    if (e.target.className === 'overlay show') {
       e.target.classList.remove('show');
       e.target.classList.add('hide');
     }
@@ -55,7 +56,6 @@ const Projects = () => {
             code_url: code,
             project_url: project,
           } = singleProject;
-          // console.log(screenSize);
           return (
             <div className='single-project-container' key={id}>
               <div
@@ -134,6 +134,7 @@ const Wrapper = styled.section`
     width: 343px;
     left: 16px;
     top: 1431px;
+    height: fit-content;
   }
   header {
     display: flex;
@@ -189,7 +190,9 @@ const Wrapper = styled.section`
       overflow: hidden;
       @media (max-width: 800px) {
         width: 342px;
-        height: 398px;
+        min-height: 398px;
+      }
+      @media (max-width: 650px) {
       }
       .overlay {
         position: absolute;

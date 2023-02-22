@@ -184,3 +184,9 @@ button {
   align-self: flex-start;
   /* z-index: 10; */
 }
+@media (max-width: 650px) {
+  .logo {
+    background: url('./assets/images/logo_mobile.png') no-repeat center
+      center/cover;
+  }
+}

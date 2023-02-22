@@ -117,7 +117,7 @@ export const projects = [
     id: 2,
     image_large: imageLarge2,
     image_small: imageSmall2,
-    name: 'TIP CALCULATOR & SPLITTER APP',
+    name: 'TIP CALCULATOR & SPLITTER',
     tech: 'HTML CSS JAVASCRIPT',
     code_url: 'https://github.com/hamdihismail/tip-calculator-app',
     project_url: 'https://precious-bonbon-5a0e79.netlify.app',

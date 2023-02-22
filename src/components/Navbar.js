@@ -37,7 +37,7 @@ const NavContainer = styled.nav`
     flex-direction: column;
     padding: 0;
     left: 111px;
-    top: 20px;
+    top: 13px;
     gap: 20px;
   }
   .nav-header {
@@ -47,15 +47,18 @@ const NavContainer = styled.nav`
     line-height: 32px;
     letter-spacing: -0.444444px;
     color: #ffffff;
-    @media (max-width: 650px) {
+    /* @media (max-width: 650px) {
       display: block;
-    }
+    } */
   }
   .logo {
     position: relative;
     bottom: 50px;
     @media (max-width: 650px) {
-      display: none;
+      position: static;
+      /* display: none; */
+      /* align-self: center; */
+      height: 50px;
     }
   }
   .icon-container {

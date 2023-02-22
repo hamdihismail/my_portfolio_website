@@ -84,15 +84,19 @@ const Wrapper = styled.section`
     height: 806px;
   }
   @media (max-width: 650px) {
+    position: relative;
     width: 375px;
     height: 834px;
     padding-top: 80px;
     justify-content: flex-start;
+    top: 83%;
+    /* bottom: 0; */
 
-    /* left: 0px;
-    top: 4179px; */
+    /* left: 0px; */
+    /* top: 4179px; */
   }
   .contact-container {
+    position: relative;
     display: flex;
     align-items: flex-start;
     width: 1110px;
@@ -204,13 +208,15 @@ const Wrapper = styled.section`
   }
 
   nav {
-    padding-left: 12%;
+    padding-left: 11%;
+    padding-right: 12%;
+
     @media (max-width: 1180px) {
       max-width: 708.49px;
       height: 63px;
-      padding: 15px 29.51px 0 30px;
+      padding: 25px 29.51px 0 30px;
       border-top: 1px solid #fff;
-      bottom: 0px;
+      bottom: 50px;
       left: 30px;
       gap: 310px;
     }
@@ -218,11 +224,17 @@ const Wrapper = styled.section`
       /* width: 343px; */
       width: 313px;
       height: 112px;
-      padding-top: 39px;
+      /* padding-top: 39px; */
+      padding-top: 20px;
       top: 702px;
       bottom: 60px;
       gap: 20px;
       align-items: center;
+    }
+    .logo {
+      @media (max-width: 650px) {
+        align-self: center;
+      }
     }
     .icon-container {
       @media (max-width: 650px) {

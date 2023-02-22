@@ -27,13 +27,21 @@ const Wrapper = styled.section`
   padding-top: 39px;
   max-width: 2000px;
   height: 3872px;
+  /* display: flex;
+  flex-direction: column; */
   background: hsla(0, 0%, 8%, 1);
   overflow-x: hidden;
   @media (max-width: 800px) {
-    min-height: 3568px;
+    height: 3568px;
   }
   @media (max-width: 650px) {
-    height: 5013px;
+    position: absolute;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    /* height: 5013px; */
   }
   .circle {
     position: absolute;
@@ -120,7 +128,8 @@ const Wrapper = styled.section`
     }
     @media (max-width: 650px) {
       left: -343px;
-      top: 4615px;
+      top: 108%;
+      /* bottom: 100px; */
     }
   }
 `;
