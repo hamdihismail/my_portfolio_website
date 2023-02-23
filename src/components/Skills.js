@@ -43,7 +43,8 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr;
     width: 345px;
     height: 604px;
-    left: 16px;
+    /* left: 16px; */
+    left: 4.2%;
     top: 747px;
     row-gap: 24px;
     padding-top: 40px;

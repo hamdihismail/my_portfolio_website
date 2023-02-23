@@ -40,6 +40,8 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    overflow-y: hidden;
+    height: 4000px;
 
     /* height: 5013px; */
   }
@@ -127,8 +129,9 @@ const Wrapper = styled.section`
       top: 3304px;
     }
     @media (max-width: 650px) {
+      /* position: relative; */
       left: -343px;
-      top: 108%;
+      top: 91.7%;
       /* bottom: 100px; */
     }
   }

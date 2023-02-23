@@ -36,7 +36,8 @@ const Wrapper = styled.section`
   @media (max-width: 650px) {
     width: 343px;
     height: fit-content;
-    left: 16px;
+    /* left: 16px; */
+    left: 4.2%;
     top: 423px;
   }
   .header-intro {

@@ -84,13 +84,14 @@ const Wrapper = styled.section`
     height: 806px;
   }
   @media (max-width: 650px) {
-    position: relative;
+    /* position: relative; */
     width: 375px;
     height: 834px;
     padding-top: 80px;
     justify-content: flex-start;
-    top: 83%;
-    /* bottom: 0; */
+    /* top: 83%; */
+    bottom: 16px;
+    margin-left: 4.2%;
 
     /* left: 0px; */
     /* top: 4179px; */
