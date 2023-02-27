@@ -100,12 +100,15 @@ const Wrapper = styled.section`
     position: relative;
     display: flex;
     align-items: flex-start;
-    width: 1110px;
+    max-width: 1110px;
     height: 420px;
     border-bottom: 1px solid #fff;
     margin-left: 165px;
     margin-bottom: 47px;
     gap: 220px;
+    @media (min-width: 1300px) {
+      width: 1110px;
+    }
     @media (max-width: 1180px) {
       flex-direction: column;
       justify-content: center;
