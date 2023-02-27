@@ -74,32 +74,32 @@ export const skills = [
   {
     id: 1,
     skill: 'HTML',
-    years: '< 2 Years Experience',
+    years: '',
   },
   {
     id: 2,
     skill: 'CSS',
-    years: '< 2 Years Experience',
+    years: '',
   },
   {
     id: 3,
     skill: 'JavaScript',
-    years: '< 2 Years Experience',
+    years: '',
   },
   {
     id: 4,
     skill: 'Accessibility',
-    years: '< 2 Years Experience',
+    years: '',
   },
   {
     id: 5,
     skill: 'React',
-    years: '< 2 Years Experience',
+    years: '',
   },
   {
     id: 6,
     skill: 'Sass',
-    years: '< 2 Years Experience',
+    years: '',
   },
 ];
 
