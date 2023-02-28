@@ -81,7 +81,10 @@ h6 {
 * {
   scroll-behavior: smooth;
 }
-
+/* social icons */
+.icon-container {
+  z-index: 10;
+}
 .icon {
   fill: #fff;
 }
@@ -89,6 +92,23 @@ h6 {
   fill: hsla(154, 71%, 59%, 1);
 }
 
+/* Logo */
+.logo {
+  background: url('./assets/images/HI_resized.png') no-repeat center
+    center/cover;
+  height: 150px;
+  width: 200px;
+  align-self: flex-start;
+  /* z-index: 10; */
+}
+@media (max-width: 650px) {
+  .logo {
+    background: url('./assets/images/HI_mobile.png') no-repeat center
+      center/cover;
+  }
+}
+
+/* Background patterns/images */
 .circle {
   background: url('./assets/images/pattern-circle.svg') no-repeat center
     center/cover;
@@ -125,9 +145,15 @@ h6 {
   }
 }
 
-.icon-container {
-  z-index: 10;
+/* Projects overlay */
+.hide {
+  opacity: 0;
 }
+.show {
+  opacity: 0.75;
+}
+
+/* contact section */
 
 .contact {
   text-decoration: none;
@@ -170,24 +196,4 @@ button {
   border: none;
   background: none;
   cursor: pointer;
-}
-.hide {
-  opacity: 0;
-}
-.show {
-  opacity: 0.75;
-}
-.logo {
-  background: url('./assets/images/HI_resized.png') no-repeat center
-    center/cover;
-  height: 150px;
-  width: 200px;
-  align-self: flex-start;
-  /* z-index: 10; */
-}
-@media (max-width: 650px) {
-  .logo {
-    background: url('./assets/images/HI_mobile.png') no-repeat center
-      center/cover;
-  }
 }
