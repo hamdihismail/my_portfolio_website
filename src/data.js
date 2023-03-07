@@ -1,9 +1,11 @@
-import imageLarge1 from './assets/images/advice_img_large.png';
-import imageSmall1 from './assets/images/advice_img_small.png';
-import imageLarge2 from './assets/images/tip_img_large.png';
-import imageSmall2 from './assets/images/tip_img_small.png';
-import imageLarge3 from './assets/images/github_img_large.png';
-import imageSmall3 from './assets/images/github_img_small.png';
+import imageLarge1 from './assets/images/retroshop_large.svg';
+import imageSmall1 from './assets/images/retroshop_small.svg';
+import imageLarge2 from './assets/images/advice_img_large.png';
+import imageSmall2 from './assets/images/advice_img_small.png';
+import imageLarge3 from './assets/images/tip_img_large.png';
+import imageSmall3 from './assets/images/tip_img_small.png';
+import imageLarge4 from './assets/images/github_img_large.png';
+import imageSmall4 from './assets/images/github_img_small.png';
 // import imageLarge4 from './assets/images/thumbnail-project-4-large.webp';
 // import imageSmall4 from './assets/images/thumbnail-project-4-small.webp';
 // import imageLarge5 from './assets/images/thumbnail-project-5-large.webp';
@@ -108,24 +110,33 @@ export const projects = [
     id: 1,
     image_large: imageLarge1,
     image_small: imageSmall1,
+    name: 'RETRO SHOP E-COMMERCE WEBSITE',
+    tech: 'REACT NODE.JS AIRTABLE AUTH0 STRIPE API',
+    code_url: 'https://github.com/hamdihismail/react-store',
+    project_url: 'https://frolicking-dolphin-ef034d.netlify.app',
+  },
+  {
+    id: 2,
+    image_large: imageLarge2,
+    image_small: imageSmall2,
     name: 'ADVICE GENERATOR APP',
     tech: 'HTML CSS JAVASCRIPT API',
     code_url: 'https://github.com/hamdihismail/advice-generator-app',
     project_url: 'https://coruscating-pasca-b8d3c0.netlify.app',
   },
   {
-    id: 2,
-    image_large: imageLarge2,
-    image_small: imageSmall2,
+    id: 3,
+    image_large: imageLarge3,
+    image_small: imageSmall3,
     name: 'TIP CALCULATOR & SPLITTER',
     tech: 'HTML CSS JAVASCRIPT',
     code_url: 'https://github.com/hamdihismail/tip-calculator-app',
     project_url: 'https://precious-bonbon-5a0e79.netlify.app',
   },
   {
-    id: 3,
-    image_large: imageLarge3,
-    image_small: imageSmall3,
+    id: 4,
+    image_large: imageLarge4,
+    image_small: imageSmall4,
     name: 'GITHUB USER SEARCH APP',
     tech: 'HTML SASS JAVASCRIPT API',
     code_url: 'https://github.com/hamdihismail/github-user-search',
